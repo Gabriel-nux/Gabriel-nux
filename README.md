@@ -18,7 +18,7 @@ Atuo no desenvolvimento de software focado em arquitetura N-Tier, resiliência d
 ### ⚡ Kuro SaaS — Distributed System & Software DRM
 Ecossistema híbrido (Edge/Cloud) para gestão e automação de IA local.
 * Implementação de motor de ingestão agnóstico em Polars, resiliência via DLQ, tolerância offline de 7 dias e validação de tokens por API com domínio próprio.
-* [📄 Ver Estudo de Caso de Arquitetura](COLE_AQUI_O_LINK_DO_SEU_CASE_STUDY) 
+* [📄 Ver Estudo de Caso de Arquitetura](https://github.com/Gabriel-nux/kuro-core-case-study.git) 
 
 ### 🛒 [Nome do Seu Projeto Web]
 Aplicação client-side integrada a banco relacional com lógica de negócios nativa.
