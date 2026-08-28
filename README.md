@@ -15,15 +15,15 @@ Atuo no desenvolvimento de software focado em arquitetura N-Tier, resiliência d
 
 ## Projetos & Estudos de Caso
 
-### ⚡ Kuro SaaS — Distributed System & Software DRM
+### ► Kuro SaaS — Distributed System & Software DRM
 Ecossistema híbrido (Edge/Cloud) para gestão e automação de IA local.
 * Implementação de motor de ingestão agnóstico em Polars, resiliência via DLQ, tolerância offline de 7 dias e validação de tokens por API com domínio próprio.
-* [📄 Ver Estudo de Caso de Arquitetura](https://github.com/Gabriel-nux/kuro-core-case-study.git) 
+* [↳ Ver Estudo de Caso de Arquitetura](https://github.com/Gabriel-nux/kuro-core-case-study.git) 
 
-### 🛒 [Forno&Código]
+### ► [Forno&Código]
 Aplicação client-side integrada a banco relacional com lógica de negócios nativa.
 * Deploy em ambiente cloud e interface estruturada em CSS Grid/Flexbox.
-* [💻 Ver Código-Fonte](https://github.com/Gabriel-nux/Forno-e-C-digo.git)
+* [↳ Ver Código-Fonte](https://github.com/Gabriel-nux/Forno-e-C-digo.git)
 
 ## Contato
 * **E-mail:** berlofaspike@gmail.com
