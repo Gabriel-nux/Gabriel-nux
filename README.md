@@ -25,6 +25,14 @@ Aplicação client-side integrada a banco relacional com lógica de negócios na
 * Deploy em ambiente cloud e interface estruturada em CSS Grid/Flexbox.
 * [↳ Ver Código-Fonte](https://github.com/Gabriel-nux/Forno-e-C-digo.git)
 
+###► Portfolio Web — Platform & Technical Showcase
+
+Interface web responsiva para consolidação de arquiteturas de software, engenharia de dados e documentação técnica de projetos.
+
+* Deploy automatizado via GitHub Pages, desenvolvido em HTML5/CSS3 sem dependências de frameworks, otimizado para performance e acessibilidade.
+* ↳ [Acessar Portfólio Ao Vivo](https://gabriel-nux.github.io/)
+* ↳ [Ver Código-Fonte](https://github.com/Gabriel-nux/Gabriel-nux.github.io)
+
 ## Contato
 * **E-mail:** berlofaspike@gmail.com
 * **LinkedIn:** [linkedin](https://www.linkedin.com/in/gabriel-berlofa-b65a31431/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BL1JsOJKkRCmiknMMtW9d5Q%3D%3D)
