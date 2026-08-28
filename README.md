@@ -20,10 +20,10 @@ Ecossistema híbrido (Edge/Cloud) para gestão e automação de IA local.
 * Implementação de motor de ingestão agnóstico em Polars, resiliência via DLQ, tolerância offline de 7 dias e validação de tokens por API com domínio próprio.
 * [📄 Ver Estudo de Caso de Arquitetura](https://github.com/Gabriel-nux/kuro-core-case-study.git) 
 
-### 🛒 [Nome do Seu Projeto Web]
+### 🛒 [Forno&Código]
 Aplicação client-side integrada a banco relacional com lógica de negócios nativa.
 * Deploy em ambiente cloud e interface estruturada em CSS Grid/Flexbox.
-* [💻 Ver Código-Fonte](COLE_AQUI_O_LINK_DO_SEU_PROJETO)
+* [💻 Ver Código-Fonte](https://github.com/Gabriel-nux/Forno-e-C-digo.git)
 
 ## Contato
 * **E-mail:** berlofaspike@gmail.com
