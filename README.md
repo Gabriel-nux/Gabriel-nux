@@ -25,7 +25,7 @@ Aplicação client-side integrada a banco relacional com lógica de negócios na
 * Deploy em ambiente cloud e interface estruturada em CSS Grid/Flexbox.
 * [↳ Ver Código-Fonte](https://github.com/Gabriel-nux/Forno-e-C-digo.git)
 
-###► Portfolio Web — Platform & Technical Showcase
+   ► Portfolio Web — Platform & Technical Showcase
 
 Interface web responsiva para consolidação de arquiteturas de software, engenharia de dados e documentação técnica de projetos.
 
