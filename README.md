@@ -27,4 +27,4 @@ Aplicação client-side integrada a banco relacional com lógica de negócios na
 
 ## Contato
 * **E-mail:** berlofaspike@gmail.com
-* **LinkedIn:** Em breve
+* **LinkedIn:** [linkedin](https://www.linkedin.com/in/gabriel-berlofa-b65a31431/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BL1JsOJKkRCmiknMMtW9d5Q%3D%3D)
