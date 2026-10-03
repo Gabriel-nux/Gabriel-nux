@@ -21,8 +21,8 @@ Ecossistema híbrido (Edge/Cloud) para gestão e automação de IA local.
 * [↳ Ver Estudo de Caso de Arquitetura](https://github.com/Gabriel-nux/kuro-core-case-study.git) 
 
 ### ► Kuro Agentic Workflow — Multi-Agent Orchestration & Zero-Trust Automation
-Camada de agentes autônomos (Supervisor Pattern) que audita, diagnostica e testa a infraestrutura do Kuro SaaS sem entrar no caminho das requisições.
-* Orquestração com LangGraph (Claude como Master/Juiz + workers locais via Ollama), ferramentas tipadas sobre SSH, aprovação humana (HitL), Zero-Data Egress, Circuit Breaker, gatilhos automáticos somente leitura e Red Team controlado em banco sintético.
+Agentes de IA que vigiam e testam a infraestrutura do Kuro SaaS, fora do caminho das requisições dos clientes.
+* Claude como Master e juiz, modelos locais (Ollama) como workers, ferramentas tipadas via SSH, aprovação humana para ações destrutivas, gatilhos automáticos somente leitura e Red Team em banco sintético.
 * [↳ Ver Estudo de Caso de Arquitetura](https://github.com/Gabriel-nux/kuro-agentic-workflow-case-study)
 
 ### ► [Forno&Código]
