@@ -9,7 +9,7 @@ Atuo no desenvolvimento de software focado em arquitetura N-Tier, resiliência d
 |---|---|
 | **Core & Back-End** | Python, FastAPI, Flask, Asyncio, Multithreading, CustomTkinter |
 | **Engenharia de Dados** | Polars (Lazy Evaluation), PostgreSQL, Supabase, DLQ (Dead Letter Queue) |
-| **Segurança & DRM** | Zero Trust Architecture, Token Validation, Ofuscação/Encriptação, Inno Setup |
+| **Segurança & DRM** | Zero Trust Architecture, Token Validation, Ofuscação/Criptografia, Inno Setup |
 | **IA & Visão** | Edge AI (LLaVA & Llama 3 local), Gemini API, Automated Prompting |
 | **Infraestrutura** | Docker Compose, Linux, Reverse Proxies / Custom Domains |
 
@@ -19,6 +19,11 @@ Atuo no desenvolvimento de software focado em arquitetura N-Tier, resiliência d
 Ecossistema híbrido (Edge/Cloud) para gestão e automação de IA local.
 * Implementação de motor de ingestão agnóstico em Polars, resiliência via DLQ, tolerância offline de 7 dias e validação de tokens por API com domínio próprio.
 * [↳ Ver Estudo de Caso de Arquitetura](https://github.com/Gabriel-nux/kuro-core-case-study.git) 
+
+### ► Kuro Agentic Workflow — Multi-Agent Orchestration & Zero-Trust Automation
+Camada de agentes autônomos (Supervisor Pattern) que audita, diagnostica e testa a infraestrutura do Kuro SaaS sem entrar no caminho das requisições.
+* Orquestração com LangGraph (Claude como Master/Juiz + workers locais via Ollama), ferramentas tipadas sobre SSH, aprovação humana (HitL), Zero-Data Egress, Circuit Breaker, gatilhos automáticos somente leitura e Red Team controlado em banco sintético.
+* [↳ Ver Estudo de Caso de Arquitetura](https://github.com/Gabriel-nux/kuro-agentic-workflow-case-study)
 
 ### ► [Forno&Código]
 Aplicação client-side integrada a banco relacional com lógica de negócios nativa.
