@@ -18,13 +18,13 @@ Atuo no desenvolvimento de software focado em arquitetura N-Tier, resiliência d
 
 | Domínio | Stack & Padrões de Projeto |
 |---|---|
-| **Arquitetura & Nuvem** | Edge & N-Tier, SaaS Multi-Tenant, Padrão Supervisor (multiagente), Docker Compose, Linux, Supabase, Render, Reverse Proxy / domínio próprio |
-| **Core & Back-End** | Python, Java, FastAPI, Flask, SQLAlchemy, Pydantic, API REST, Asyncio, Multithreading |
+| **Arquitetura & Nuvem** | Edge & N-Tier, SaaS Multi-Tenant, Padrão Supervisor (multiagente), Docker Compose, Linux, Supabase, Render, Reverse Proxy / domínio próprio, Neon (PostgreSQL serverless), SSH (ufw, fail2ban), VirtualBox |
+| **Core & Back-End** | Python, Java, FastAPI, Flask, SQLAlchemy, Pydantic, API REST, Asyncio, Multithreading, Gunicorn, migrações SQL versionadas |
 | **Engenharia de Dados** | Polars (Lazy Evaluation), PostgreSQL, Supabase, DLQ (Dead Letter Queue), Circuit Breaker |
-| **Segurança** | Zero Trust, IAM & Token Management, Licenciamento por hardware (HMAC-SHA256), Privacy by Design (LGPD/GDPR), Defesa contra Prompt Injection, Red Teaming, Sandbox & Menor Privilégio, bcrypt |
-| **IA & Agentes** | LangGraph, Human-in-the-Loop, Claude API, Ollama (Llama 3, Qwen), LLaVA, Gemini API, Prompt Engineering, benchmark de modelos locais, WhatsApp (Meta Cloud API) |
-| **Qualidade & DevOps** | pytest, unittest, Vitest e Testing Library, GitHub Actions (CI/CD), testes com PostgreSQL real, fuzzing de validadores, Lighthouse, axe-core, PyInstaller, Inno Setup |
-| **Front-end & Interfaces** | HTML, CSS (Grid/Flexbox), JavaScript, TypeScript, React, Tailwind CSS, Motion (animações com física de mola), Feature-Sliced Design, CustomTkinter, acessibilidade (WCAG) e layout responsivo |
+| **Segurança** | Zero Trust, IAM & Token Management, Licenciamento por hardware (HMAC-SHA256), Privacy by Design (LGPD/GDPR), Defesa contra Prompt Injection, Red Teaming, Sandbox & Menor Privilégio, bcrypt, JWT, Rate limiting, CORS, Zero-Data Egress |
+| **IA & Agentes** | LangGraph, Human-in-the-Loop, Claude API, Ollama (Llama 3, Qwen), LLaVA, Gemini API, Prompt Engineering, benchmark de modelos locais, WhatsApp (Meta Cloud API), LangChain |
+| **Qualidade & DevOps** | pytest, unittest, Vitest e Testing Library, GitHub Actions (CI/CD), testes com PostgreSQL real, fuzzing de validadores, Lighthouse, axe-core, PyInstaller, Inno Setup, Dependabot e gestão de dependências, análise estática (AST), pip-audit e npm audit |
+| **Front-end & Interfaces** | HTML, CSS (Grid/Flexbox), JavaScript, TypeScript, React, Tailwind CSS, Motion (animações com física de mola), Feature-Sliced Design, CustomTkinter, acessibilidade (WCAG) e layout responsivo, Vite, Zustand, TanStack Query, Zod, Core Web Vitals |
 
 ## Projetos & Estudos de Caso
 
