@@ -13,7 +13,7 @@ Atuo no desenvolvimento de software focado em arquitetura N-Tier, resiliência d
 | **Segurança** | Zero Trust, IAM & Token Management, Licenciamento por hardware (HMAC-SHA256), Privacy by Design (LGPD/GDPR), Defesa contra Prompt Injection, Red Teaming, Sandbox & Menor Privilégio, bcrypt |
 | **IA & Agentes** | LangGraph, Human-in-the-Loop, Claude API, Ollama (Llama 3, Qwen), LLaVA, Gemini API, Prompt Engineering, benchmark de modelos locais, WhatsApp (Meta Cloud API) |
 | **Qualidade & DevOps** | pytest, unittest, GitHub Actions (CI/CD), testes com PostgreSQL real, fuzzing de validadores, PyInstaller, Inno Setup |
-| **Front-end & Interfaces** | HTML, CSS (Grid/Flexbox), JavaScript, CustomTkinter, acessibilidade e layout responsivo |
+| **Front-end & Interfaces** | HTML, CSS (Grid/Flexbox), JavaScript, React, Tailwind CSS, CustomTkinter, acessibilidade e layout responsivo |
 
 ## Projetos & Estudos de Caso
 
