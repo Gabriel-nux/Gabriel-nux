@@ -39,8 +39,9 @@ Agentes de IA que vigiam e testam a infraestrutura do Kuro SaaS, fora do caminho
 * [↳ Ver Estudo de Caso de Arquitetura](https://github.com/Gabriel-nux/kuro-agentic-workflow-case-study)
 
 ### ► Forno & Código — E-commerce Full-Stack
-Aplicação full-stack para uma pizzaria: cardápio e sacola com pizza meio a meio (preço do sabor mais caro), cadastro e login por API Flask com PostgreSQL e senhas em bcrypt.
-* Front-end em HTML, CSS e JavaScript puros, com catálogo único e acessibilidade; back-end com testes automatizados e CI. Demo do front-end publicada via GitHub Pages. Migração para React + TypeScript em andamento (v2).
+Plataforma de pedidos de uma pizzaria, no ar de ponta a ponta: cardápio dinâmico com pizza meio a meio (preço do sabor mais caro), sacola e checkout, e um painel administrativo para cadastrar produtos e acompanhar os pedidos que chegam. Projeto de portfólio: o pagamento online ainda não existe e o pedido fica pendente.
+* Front-end em React 19, TypeScript estrito, Tailwind v4 e Vite, com Feature-Sliced Design verificada por lint (Steiger); API em Flask em camadas com JWT, bcrypt, limite de tentativas e preços recalculados no servidor; PostgreSQL no Neon com migrações SQL. Deploy: GitHub Pages (front), Render (API) e Neon (banco).
+* 458 testes automatizados (287 no front e 171 no back, os de integração contra PostgreSQL real no CI), GitHub Actions e Dependabot. Lighthouse na URL pública (2026-10-04): 98 a 100 no celular e 100 no desktop; acessibilidade 100 e `axe-core` sem violações. A API usa plano gratuito: a primeira carga depois de um tempo parado pode levar até cerca de 50 s.
 * [↳ Ver Demo ao Vivo](https://gabriel-nux.github.io/Forno-e-C-digo/)
 * [↳ Ver Código-Fonte](https://github.com/Gabriel-nux/Forno-e-C-digo)
 
