@@ -43,14 +43,14 @@ Plataforma de pedidos de uma pizzaria, no ar de ponta a ponta: cardápio dinâmi
 * Front-end em React 19, TypeScript estrito, Tailwind v4 e Vite, com Feature-Sliced Design verificada por lint (Steiger); API em Flask em camadas com JWT, bcrypt, limite de tentativas e preços recalculados no servidor; PostgreSQL no Neon com migrações SQL. Deploy: GitHub Pages (front), Render (API) e Neon (banco).
 * 458 testes automatizados (287 no front e 171 no back, os de integração contra PostgreSQL real no CI), GitHub Actions e Dependabot. Lighthouse na URL pública (2026-10-04): 98 a 100 no celular e 100 no desktop; acessibilidade 100 e `axe-core` sem violações. A API usa plano gratuito: a primeira carga depois de um tempo parado pode levar até cerca de 50 s.
 * [↳ Ver Demo ao Vivo](https://gabriel-nux.github.io/Forno-e-C-digo/)
-* [↳ Ver Código-Fonte](https://github.com/Gabriel-nux/Forno-e-C-digo)
+* [↳ Ver Arquitetura e Trechos de Código](https://github.com/Gabriel-nux/Forno-e-C-digo)
 
 ### ► Portfolio Web — React, TypeScript & Feature-Sliced Design
 Portfólio que reúne os projetos, as competências e os estudos de caso, tratado como um projeto de engenharia.
 * React 19, TypeScript estrito, Tailwind v4 e Motion, com arquitetura Feature-Sliced Design verificada por lint (Steiger), esquemas Zod, 34 testes e CI/CD no GitHub Actions. HTML pré-renderizado no build, com hidratação adiada.
 * Lighthouse na URL pública (2026-10-04): celular 99 e desktop 99 em desempenho; 100 em acessibilidade, boas práticas e SEO. `axe-core` sem violações.
 * [↳ Acessar Portfólio Ao Vivo](https://gabriel-nux.github.io/)
-* [↳ Ver Código-Fonte e Arquitetura](https://github.com/Gabriel-nux/Gabriel-nux.github.io)
+* [↳ Ver Arquitetura e Trechos de Código](https://github.com/Gabriel-nux/Gabriel-nux.github.io)
 
 ## Contato
 * **E-mail:** berlofaspike@gmail.com
