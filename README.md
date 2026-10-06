@@ -45,6 +45,19 @@ Plataforma de pedidos de uma pizzaria, no ar de ponta a ponta: cardápio dinâmi
 * [↳ Ver Demo ao Vivo](https://gabriel-nux.github.io/Forno-e-C-digo/)
 * [↳ Ver Arquitetura e Trechos de Código](https://github.com/Gabriel-nux/Forno-e-C-digo)
 
+### ► Kuro Fighter — Real-Time Netcode & Game Engine
+Motor de jogo de luta 2D em Java puro, sem engine, com multiplayer online e bots que jogam pelas mesmas regras de quem joga.
+* Simulação determinística em ponto fixo e rede UDP Lockstep com redundância de inputs, checksum de estado e `ContentHash` no lobby, evitando o Head-of-Line Blocking do TCP. Com 50% de perda de pacotes em teste, as duas simulações terminam idênticas. Testado em loopback; o teste real em dois PCs está pendente.
+* Design Patterns aplicados: FSM de 9 estados (State), Observer com eventos selados (som, câmera, HUD e conquistas sem acoplar o combate), Factory orientada a dados e bot como `InputDevice`, com reação atrasada em vez de ler o input do oponente.
+* Otimização de Garbage Collector medida por teste: 0 B/frame na simulação e nos bots (2,4 B/frame em luta intensa). 9 suítes de teste sem janela.
+* ↳ Repositório e Estudo de Caso em breve
+
+### ► Flappy Drone — Accessible Game Physics (Projeto de Extensão SENAI)
+Jogo feito no projeto de extensão do SENAI, com foco em acessibilidade para pessoas com deficiência intelectual, levado em pendrive para jogar em projetor, sem instalar nada.
+* Física escrita à mão em Java e JavaFX (integração de Euler, colisão círculo contra retângulo), sem engine pronta, para calibrar a janela de reação: 2,3 s para ver cada obstáculo chegar e 196 px de folga vertical na abertura.
+* Passo de tempo limitado para o drone não atravessar um obstáculo quando o computador trava; sem código de rede. Ainda sem testes automatizados e sem teste de campo com o público.
+* ↳ Repositório e Estudo de Caso em breve
+
 ### ► Portfolio Web — React, TypeScript & Feature-Sliced Design
 Portfólio que reúne os projetos, as competências e os estudos de caso, tratado como um projeto de engenharia.
 * React 19, TypeScript estrito, Tailwind v4 e Motion, com arquitetura Feature-Sliced Design verificada por lint (Steiger), esquemas Zod, 34 testes e CI/CD no GitHub Actions. HTML pré-renderizado no build, com hidratação adiada.
