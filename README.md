@@ -38,6 +38,12 @@ Agentes de IA que vigiam e testam a infraestrutura do Kuro SaaS, fora do caminho
 * Claude como Master e juiz, modelos locais (Ollama) como workers, ferramentas tipadas via SSH, aprovação humana para ações destrutivas, gatilhos automáticos somente leitura e Red Team em banco sintético. 239 testes automatizados.
 * [↳ Ver Estudo de Caso de Arquitetura](https://github.com/Gabriel-nux/kuro-agentic-workflow-case-study)
 
+### ► Kuro Inventory Pricing — B2B Local AI Engine
+Mini-SaaS single-tenant de precificação e controle de estoque com IA local (LLaMA 3.1 8B via Ollama), entregue como um único executável do Windows que se atualiza por um canal assinado.
+* O LLM propõe, o código valida: o modelo só pede um ajuste de até ±30% e o preço final é recalculado em centavos inteiros e cortado entre piso e teto de margem (0 preços fora da faixa em 20 mil casos aleatórios). Ingestão agnóstica em Polars, com mapeamento de colunas confirmado por humano e DLQ; 200 mil linhas em 5,5 s com pico de 580 MB, sob teto rígido de 25 MB, e criptografia em repouso obrigatória.
+* Executável com PyInstaller e PyArmor (nomes legíveis no PYZ de 267/267 para 0/267) e atualização OTA pull assinada com Ed25519: versão, hash, tamanho e URL assinados, e 1 byte diferente apaga o download. 488 testes automatizados, teste de mutação 43/43 e E2E real com dois executáveis. Sem validação remota de licença ainda e testado só com dados sintéticos.
+* [↳ Ver Estudo de Caso de Arquitetura](https://github.com/Gabriel-nux/kuro-inventory-pricing-vitrine)
+
 ### ► Forno & Código — E-commerce Full-Stack
 Plataforma de pedidos de uma pizzaria, no ar de ponta a ponta: cardápio dinâmico com pizza meio a meio (preço do sabor mais caro), sacola e checkout, e um painel administrativo para cadastrar produtos e acompanhar os pedidos que chegam. Projeto de portfólio: o pagamento online ainda não existe e o pedido fica pendente.
 * Front-end em React 19, TypeScript estrito, Tailwind v4 e Vite, com Feature-Sliced Design verificada por lint (Steiger); API em Flask em camadas com JWT, bcrypt, limite de tentativas e preços recalculados no servidor; PostgreSQL no Neon com migrações SQL. Deploy: GitHub Pages (front), Render (API) e Neon (banco).
