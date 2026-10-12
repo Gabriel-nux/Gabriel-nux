@@ -53,7 +53,7 @@ Mini-SaaS single-tenant de precificação e controle de estoque com IA local (LL
 * Executável com PyInstaller e PyArmor (nomes legíveis no PYZ de 267/267 para 0/267) e atualização OTA pull assinada com Ed25519: versão, hash, tamanho e URL assinados, e 1 byte diferente apaga o download. 488 testes automatizados, teste de mutação 43/43 e E2E real com dois executáveis. Sem validação remota de licença ainda e testado só com dados sintéticos.
 * [↳ Ver Estudo de Caso de Arquitetura](https://github.com/Gabriel-nux/kuro-inventory-pricing-vitrine)
 
-### ► Kuro Tracker — Private Case Study: Offline Finance & Local LLM Orchestration
+### ► Kuro Tracker — Case Study: Offline Finance & Local LLM Orchestration
 Um sistema de gestão financeira offline com orquestração local de LLM. Projeto pessoal, com o código em repositório privado.
 * A matemática vem antes da IA: totais, projeção (regressão linear) e anomalias (estatística robusta a outliers) são funções puras testadas; o Llama 3 local só narra os números prontos, e os gráficos nunca vêm do texto do modelo.
 * Zero-Data Egress Architecture: o cliente de IA só aceita loopback e recusa proxy de ambiente, redirecionamento HTTP e credenciais na URL, com testes contra um servidor HTTP real; escrita atômica com backup e recuperação de arquivo corrompido. 210 testes automatizados.
