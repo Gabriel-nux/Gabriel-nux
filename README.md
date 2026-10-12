@@ -14,6 +14,15 @@
 
 Atuo no desenvolvimento de software focado em arquitetura N-Tier, resiliência de dados e segurança em nível de aplicação. Atualmente graduando em Análise e Desenvolvimento de Sistemas (SENAI), aplico conceitos de Zero Trust, processamento assíncrono e otimização de recursos em projetos híbridos (Edge/Cloud), e integro IA em produção com aprovação humana nas ações críticas.
 
+## Skills em Destaque
+
+| Skill | Onde está provada |
+|---|---|
+| **AI Engineering** | LLM local tratado como componente com contrato: o código decide e valida, o modelo propõe ou narra. Kuro Inventory Pricing, Kuro Tracker e o benchmark próprio de modelos locais do Kuro Agentic Workflow. |
+| **LLM Orchestration** | Supervisor multiagente em LangGraph com workers locais e aprovação humana (Kuro Agentic Workflow); streaming, cancelamento e papéis configuráveis por preset (Kuro Tracker). |
+| **Context Engineering** | Manifestos de papel versionados como código (*prompt-as-code*), com protocolo de ativação, diretiva de evolução e registro do que foi medido, em um repositório privado (Kuro Context Engine). |
+| **Zero-Data Egress** | Propriedade testada, não promessa: processamento 100% no cliente, cliente de IA que só aceita loopback e recusa proxy e redirecionamento (Kuro SaaS, Kuro Inventory Pricing, Kuro Tracker). |
+
 ## Arquitetura & Domínio Técnico
 
 | Domínio | Stack & Padrões de Projeto |
@@ -23,7 +32,7 @@ Atuo no desenvolvimento de software focado em arquitetura N-Tier, resiliência d
 | **Engenharia de Dados** | Polars (Lazy Evaluation), PostgreSQL, Supabase, DLQ (Dead Letter Queue), Circuit Breaker |
 | **Segurança** | Zero Trust, IAM & Token Management, Licenciamento por hardware (HMAC-SHA256), Privacy by Design (LGPD/GDPR), Defesa contra Prompt Injection, Red Teaming, Sandbox & Menor Privilégio, bcrypt, JWT, Rate limiting, CORS, Zero-Data Egress Architecture (cliente de IA que só aceita loopback, sem proxy nem redirecionamento) |
 | **IA & Agentes** | LangGraph, Human-in-the-Loop, Claude API, Edge AI (Llama 3 local via Ollama, Qwen), orquestração de LLM local, LLaVA, Gemini API, Prompt Engineering, benchmark de modelos locais, WhatsApp (Meta Cloud API), LangChain |
-| **Qualidade & DevOps** | pytest, unittest, Vitest e Testing Library, GitHub Actions (CI/CD), testes com PostgreSQL real, fuzzing de validadores, Lighthouse, axe-core, PyInstaller (onefile e onedir), instalador Windows próprio em Python, Inno Setup, Dependabot e gestão de dependências, análise estática (AST), pip-audit e npm audit |
+| **Qualidade & DevOps** | pytest, unittest, Vitest e Testing Library, GitHub Actions (CI/CD), testes com PostgreSQL real, fuzzing de validadores, Lighthouse, axe-core, PyInstaller (onefile e onedir), instaladores customizados em Python/PyInstaller, Dependabot e gestão de dependências, análise estática (AST), pip-audit e npm audit |
 | **Front-end & Interfaces** | HTML, CSS (Grid/Flexbox), JavaScript, TypeScript, React, Tailwind CSS, Motion (animações com física de mola), Feature-Sliced Design, CustomTkinter (Desktop UI B2B), acessibilidade (WCAG) e layout responsivo, Vite, Zustand, TanStack Query, Zod, Core Web Vitals |
 
 ## Projetos & Estudos de Caso
