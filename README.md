@@ -21,10 +21,10 @@ Atuo no desenvolvimento de software focado em arquitetura N-Tier, resiliência d
 | **Arquitetura & Nuvem** | Edge & N-Tier, SaaS Multi-Tenant, Padrão Supervisor (multiagente), Docker Compose, Linux, Supabase, Render, Reverse Proxy / domínio próprio, Neon (PostgreSQL serverless), SSH (ufw, fail2ban), VirtualBox |
 | **Core & Back-End** | Python, Java, FastAPI, Flask, SQLAlchemy, Pydantic, API REST, Asyncio, Multithreading, Gunicorn, migrações SQL versionadas |
 | **Engenharia de Dados** | Polars (Lazy Evaluation), PostgreSQL, Supabase, DLQ (Dead Letter Queue), Circuit Breaker |
-| **Segurança** | Zero Trust, IAM & Token Management, Licenciamento por hardware (HMAC-SHA256), Privacy by Design (LGPD/GDPR), Defesa contra Prompt Injection, Red Teaming, Sandbox & Menor Privilégio, bcrypt, JWT, Rate limiting, CORS, Zero-Data Egress |
-| **IA & Agentes** | LangGraph, Human-in-the-Loop, Claude API, Ollama (Llama 3, Qwen), LLaVA, Gemini API, Prompt Engineering, benchmark de modelos locais, WhatsApp (Meta Cloud API), LangChain |
-| **Qualidade & DevOps** | pytest, unittest, Vitest e Testing Library, GitHub Actions (CI/CD), testes com PostgreSQL real, fuzzing de validadores, Lighthouse, axe-core, PyInstaller, Inno Setup, Dependabot e gestão de dependências, análise estática (AST), pip-audit e npm audit |
-| **Front-end & Interfaces** | HTML, CSS (Grid/Flexbox), JavaScript, TypeScript, React, Tailwind CSS, Motion (animações com física de mola), Feature-Sliced Design, CustomTkinter, acessibilidade (WCAG) e layout responsivo, Vite, Zustand, TanStack Query, Zod, Core Web Vitals |
+| **Segurança** | Zero Trust, IAM & Token Management, Licenciamento por hardware (HMAC-SHA256), Privacy by Design (LGPD/GDPR), Defesa contra Prompt Injection, Red Teaming, Sandbox & Menor Privilégio, bcrypt, JWT, Rate limiting, CORS, Zero-Data Egress Architecture (cliente de IA que só aceita loopback, sem proxy nem redirecionamento) |
+| **IA & Agentes** | LangGraph, Human-in-the-Loop, Claude API, Edge AI (Llama 3 local via Ollama, Qwen), orquestração de LLM local, LLaVA, Gemini API, Prompt Engineering, benchmark de modelos locais, WhatsApp (Meta Cloud API), LangChain |
+| **Qualidade & DevOps** | pytest, unittest, Vitest e Testing Library, GitHub Actions (CI/CD), testes com PostgreSQL real, fuzzing de validadores, Lighthouse, axe-core, PyInstaller (onefile e onedir), instalador Windows próprio em Python, Inno Setup, Dependabot e gestão de dependências, análise estática (AST), pip-audit e npm audit |
+| **Front-end & Interfaces** | HTML, CSS (Grid/Flexbox), JavaScript, TypeScript, React, Tailwind CSS, Motion (animações com física de mola), Feature-Sliced Design, CustomTkinter (Desktop UI B2B), acessibilidade (WCAG) e layout responsivo, Vite, Zustand, TanStack Query, Zod, Core Web Vitals |
 
 ## Projetos & Estudos de Caso
 
@@ -43,6 +43,13 @@ Mini-SaaS single-tenant de precificação e controle de estoque com IA local (LL
 * O LLM propõe, o código valida: o modelo só pede um ajuste de até ±30% e o preço final é recalculado em centavos inteiros e cortado entre piso e teto de margem (0 preços fora da faixa em 20 mil casos aleatórios). Ingestão agnóstica em Polars, com mapeamento de colunas confirmado por humano e DLQ; 200 mil linhas em 5,5 s com pico de 580 MB, sob teto rígido de 25 MB, e criptografia em repouso obrigatória.
 * Executável com PyInstaller e PyArmor (nomes legíveis no PYZ de 267/267 para 0/267) e atualização OTA pull assinada com Ed25519: versão, hash, tamanho e URL assinados, e 1 byte diferente apaga o download. 488 testes automatizados, teste de mutação 43/43 e E2E real com dois executáveis. Sem validação remota de licença ainda e testado só com dados sintéticos.
 * [↳ Ver Estudo de Caso de Arquitetura](https://github.com/Gabriel-nux/kuro-inventory-pricing-vitrine)
+
+### ► Kuro Tracker — Private Case Study: Offline Finance & Local LLM Orchestration
+Um sistema de gestão financeira offline com orquestração local de LLM. Projeto pessoal, com o código em repositório privado.
+* A matemática vem antes da IA: totais, projeção (regressão linear) e anomalias (estatística robusta a outliers) são funções puras testadas; o Llama 3 local só narra os números prontos, e os gráficos nunca vêm do texto do modelo.
+* Zero-Data Egress Architecture: o cliente de IA só aceita loopback e recusa proxy de ambiente, redirecionamento HTTP e credenciais na URL, com testes contra um servidor HTTP real; escrita atômica com backup e recuperação de arquivo corrompido. 210 testes automatizados.
+* Distribuição: abertura de cerca de 9 s para cerca de 1 s ao trocar o PyInstaller `onefile` por `onedir` (medido), instalador próprio em Python com desinstalação testada de verdade e Docker Compose para o Ollama. O compose ainda não foi executado (a máquina de desenvolvimento não tem Docker), não há usuários externos e o texto do modelo não tem verificação automática dos valores.
+* Estudo de caso técnico em repositório privado, disponível sob solicitação.
 
 ### ► Forno & Código — E-commerce Full-Stack
 Plataforma de pedidos de uma pizzaria, no ar de ponta a ponta: cardápio dinâmico com pizza meio a meio (preço do sabor mais caro), sacola e checkout, e um painel administrativo para cadastrar produtos e acompanhar os pedidos que chegam. Projeto de portfólio: o pagamento online ainda não existe e o pedido fica pendente.
