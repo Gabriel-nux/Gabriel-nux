@@ -20,7 +20,7 @@ Atuo no desenvolvimento de software focado em arquitetura N-Tier, resiliência d
 |---|---|
 | **AI Engineering** | LLM local tratado como componente com contrato: o código decide e valida, o modelo propõe ou narra. Kuro Inventory Pricing, Kuro Tracker e o benchmark próprio de modelos locais do Kuro Agentic Workflow. |
 | **LLM Orchestration** | Supervisor multiagente em LangGraph com workers locais e aprovação humana (Kuro Agentic Workflow); streaming, cancelamento e papéis configuráveis por preset (Kuro Tracker). |
-| **Context Engineering** | Manifestos de papel versionados como código (*prompt-as-code*), com protocolo de ativação, diretiva de evolução e registro do que foi medido, em um repositório privado (Kuro Context Engine). |
+| **Context Engineering** | Manifestos de papel versionados como código (*prompt-as-code*), com protocolo de ativação, diretiva de evolução e registro do que foi medido, em um repositório privado (Kuro Context Engine; [↳ Ver Estudo de Caso de Arquitetura](https://github.com/Gabriel-nux/kuro-context-engine-showcase)). |
 | **Zero-Data Egress** | Propriedade testada, não promessa: processamento 100% no cliente, cliente de IA que só aceita loopback e recusa proxy e redirecionamento (Kuro SaaS, Kuro Inventory Pricing, Kuro Tracker). |
 
 ## Arquitetura & Domínio Técnico
@@ -58,7 +58,7 @@ Um sistema de gestão financeira offline com orquestração local de LLM. Projet
 * A matemática vem antes da IA: totais, projeção (regressão linear) e anomalias (estatística robusta a outliers) são funções puras testadas; o Llama 3 local só narra os números prontos, e os gráficos nunca vêm do texto do modelo.
 * Zero-Data Egress Architecture: o cliente de IA só aceita loopback e recusa proxy de ambiente, redirecionamento HTTP e credenciais na URL, com testes contra um servidor HTTP real; escrita atômica com backup e recuperação de arquivo corrompido. 210 testes automatizados.
 * Distribuição: abertura de cerca de 9 s para cerca de 1 s ao trocar o PyInstaller `onefile` por `onedir` (medido), instalador próprio em Python com desinstalação testada de verdade e Docker Compose para o Ollama. O compose ainda não foi executado (a máquina de desenvolvimento não tem Docker), não há usuários externos e o texto do modelo não tem verificação automática dos valores.
-* Estudo de caso técnico em repositório privado, disponível sob solicitação.
+* [↳ Ver Estudo de Caso de Arquitetura](https://github.com/Gabriel-nux/kuro-tracker-showcase)
 
 ### ► Forno & Código — E-commerce Full-Stack
 Plataforma de pedidos de uma pizzaria, no ar de ponta a ponta: cardápio dinâmico com pizza meio a meio (preço do sabor mais caro), sacola e checkout, e um painel administrativo para cadastrar produtos e acompanhar os pedidos que chegam. Projeto de portfólio: o pagamento online ainda não existe e o pedido fica pendente.
